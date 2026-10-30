@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CueMeet 隱私權政策</title>
+<style>
+  :root { --bg: #f5f4ef; --surface: #fff; --line: #e3e0d8; --ink: #1b1f27; --ink-2: #4a505b; --ink-3: #6f7480; --accent: #2f55c4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17191d; --surface: #202227; --line: #33363d; --ink: #ebe8e2; --ink-2: #bab7b0; --ink-3: #8e8c87; --accent: #93b1f4; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.8 -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 72px; }
+  h1 { font-size: 1.7rem; line-height: 1.3; margin: 0 0 4px; }
+  h2 { font-size: 1.12rem; margin: 2em 0 .4em; }
+  p, li { color: var(--ink-2); }
+  ul { padding-left: 1.3em; }
+  a { color: var(--accent); }
+  .meta { color: var(--ink-3); font-size: .9rem; margin: 0 0 2em; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3em 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CueMeet 隱私權政策</h1>
+  <p class="meta">最後更新：2026 年 10 月 30 日</p>
+
+  <p>CueMeet 是一個 Chrome 擴充功能，協助使用者理解與記錄英文會議。本政策說明 CueMeet 會處理哪些資料、存在哪裡、送到哪裡。</p>
+
+  <h2>CueMeet 沒有伺服器</h2>
+  <p>CueMeet 的開發者沒有任何伺服器、資料庫或分析追蹤服務，也收不到你的任何資料。不需要註冊帳號。</p>
+
+  <h2>處理哪些資料</h2>
+  <ul>
+    <li><strong>會議音訊</strong>：你開始會議時選擇分享的分頁或螢幕的聲音，以及（若你允許）你的麥克風聲音。</li>
+    <li><strong>會議內容</strong>：由音訊產生的英文逐字稿、中文翻譯、重點、查詞紀錄與會後總結。</li>
+    <li><strong>錄製檔</strong>：你選擇錄音或錄影時產生的檔案。</li>
+    <li><strong>API 金鑰</strong>：你自己提供的 Google Gemini API 金鑰。</li>
+    <li><strong>設定</strong>：你的英文名字、產業、自訂術語與介面偏好。</li>
+  </ul>
+
+  <h2>資料存在哪裡</h2>
+  <ul>
+    <li>以上所有資料都只存在你這台電腦的瀏覽器裡：會議內容在 IndexedDB，錄製檔在瀏覽器檔案空間（OPFS），金鑰與設定在擴充功能的本機儲存空間（chrome.storage.local），不會同步到其他裝置。</li>
+    <li>資料沒有另外加密，安全性與你電腦的磁碟加密（FileVault、BitLocker）相同。</li>
+    <li>你可以隨時在 CueMeet 裡刪除單場或全部會議。解除安裝擴充功能會一併刪除所有資料。</li>
+  </ul>
+
+  <h2>什麼會送出去</h2>
+  <p>會議音訊與文字會透過你自己的 API 金鑰，送到 Google Gemini API（generativelanguage.googleapis.com）做語音辨識、翻譯、重點整理與總結。這是 CueMeet 唯一的對外連線。</p>
+  <p>Google 如何處理這些資料，依 <a href="https://ai.google.dev/gemini-api/terms">Gemini API 服務條款</a> 而定：免費層（未綁定帳單）的內容可能被 Google 用來改進其產品並經人工審閱；付費層則不會。機密會議請使用付費層。</p>
+
+  <h2>我們不做的事</h2>
+  <ul>
+    <li>不出售或轉讓你的資料給任何第三方。</li>
+    <li>不將你的資料用於 CueMeet 功能以外的用途。</li>
+    <li>不將你的資料用於判斷信用度或放款。</li>
+    <li>不放廣告、不做使用行為追蹤。</li>
+  </ul>
+
+  <h2>錄製</h2>
+  <p>錄音或錄影前，請先告知與會者，並遵守你所在地區與公司的規定。</p>
+
+  <h2>政策變更</h2>
+  <p>本政策若有變更，會更新本頁並修改上方的「最後更新」日期。</p>
+
+  <h2>聯絡</h2>
+  <p>有任何問題請寄信到 <a href="mailto:kevinyang0127@gmail.com">kevinyang0127@gmail.com</a>。</p>
+
+  <hr>
+
+  <h1>CueMeet Privacy Policy</h1>
+  <p class="meta">Last updated: October 30, 2026</p>
+
+  <p>CueMeet is a Chrome extension that helps users understand and record English meetings. The developer operates no servers, databases or analytics, and receives none of your data. No account is required.</p>
+
+  <h2>Data handled</h2>
+  <ul>
+    <li>Meeting audio from the tab or screen you choose to share, and your microphone if you allow it.</li>
+    <li>Transcripts, translations, key points, word lookups and summaries generated from that audio.</li>
+    <li>Audio or video recordings, if you choose to record.</li>
+    <li>Your own Google Gemini API key, and your settings.</li>
+  </ul>
+
+  <h2>Where it is stored</h2>
+  <p>Everything is stored locally in your browser (IndexedDB, the Origin Private File System, and chrome.storage.local) and is never synced to other devices. You can delete any meeting at any time; uninstalling the extension deletes all data.</p>
+
+  <h2>What is sent</h2>
+  <p>Meeting audio and text are sent to the Google Gemini API (generativelanguage.googleapis.com) using your own API key, for speech recognition, translation and summarization. This is the extension's only network destination. Google's handling of that data is governed by the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a>; on the free tier, content may be used to improve Google's products and reviewed by humans, while the paid tier does not.</p>
+
+  <h2>What we don't do</h2>
+  <p>We do not sell or transfer user data to third parties, do not use it for purposes unrelated to CueMeet's single purpose, and do not use it to determine creditworthiness or for lending. No ads, no tracking.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:kevinyang0127@gmail.com">kevinyang0127@gmail.com</a></p>
+</main>
+</body>
+</html>
